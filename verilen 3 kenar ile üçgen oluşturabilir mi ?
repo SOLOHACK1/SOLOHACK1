@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class main9 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);System.out.print("Üçgen kuralı içerisinde üçgen yapabilmek için 3 kenar uzunluğu giriniz : \n");
+		double a,b,c;
+		a=sc.nextDouble();b=sc.nextDouble();c=sc.nextDouble();
+		if(a<=0&&b<=0&&c<=0) {// ilk if else yapısında kenar uzunluklarının pozitif olup olmadığı kontrol edilir.
+			System.out.println("Kenar uzunları pozitif reel sayılar için mümkündür");
+		}
+		
+		else {// üçgen kuralı gereği girilen kenarların uzunluğunun 3 şarttı sağladığı zaman üçgen oluşturur
+			if(Math.abs(a-b)<c&&c<a+b&&Math.abs(c-b)<a&&a<c+b&&Math.abs(b-c)<b&&b<a+c) {
+				System.out.println("Girilen üç kenar uzunluğu ile üçgen oluşur.");
+			}//sağlamadığı vakit oluşturmaz.
+			else {System.out.println("Girilen kenar uzunlukları üçgen oluşturmak için uygun değildir");}
+			}	
+	}
+
+}//aşağıda ise aynı kodun daha anlaşılır şekli var.
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	System.out.println("kenar uzunlukları giriniz : ");
+	int a,b,c;a=sc.nextInt();b=sc.nextInt();c=sc.nextInt();
+	
+	
+	if(a<=0||b<=0||c<=0)// üçgenin verilen kenar uzunluklarının doğru olduğunu kontrol etmeliyim.
+	{System.out.println(" Bir üçgeninin kenar uzunluğu negatif veya 0 olamaz.");}
+		
+	else{// üçgen oluşturma kuralında her zaman çıkarma işlemlerinden  en az biri negatif alır.
+		// üçgenler kenarların 3 değer aralığındaki ölçüye göre çizme kuralı vardır.
+	/*girilen üç kenar uzunluklarından bir kenar diğer iki kenarın farkı  ve toplamı arasında değer alır.
+	 *  1.|b-c|<a<(b+c)
+	 *  2.|a-c|<b<(a+c)
+	 *  3.|a-b|<c<(a+b) 
+	 *  şeklindedir.*/	
+	//kod öncelikle sırasıyla a b c kenarlarını alıyor.
+	//negatif bir parantez var ise kod buraya giriş yapıyor.
+	if((b-c)<=0||(a-c)<=0||(a-b)<=0)
+		/* kodlarda mutlak değeri sağlayabilmek için öncelikle çıkarma işlemlerini kontrol edip negatif 
+		 olanları eksiyle çarpmalıyım.*/
+	{
+		 int M_1=(b-c)*(-1);
+	     int M_2=(a-c)*(-1);
+		 int M_3=(a-b)*(-1);
+	   //negatifliğe sahip parantez işlemleri burada mutlak değere aldım.
+	   
+		if((M_3)<c&&c<(a+b)&&M_2<b&&b<a+c&&M_1<a&&a<b+c) {System.out.println("üçgen olur");}
+		//yukardaki kod çalışmazsa tek olasılık üçgen olmaz.
+		else {System.out.println("üçgen olmaz");}
+		
+		
+		}}}}
