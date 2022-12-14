@@ -1,0 +1,15 @@
+// Kodda sınıf tanımlamadım direk kopyala yapıştırdan kodu çalıştarabilirsiniz.
+//Kodun amacı verilen 2 kenarla oluşabilicek üçgenin 3. kenarı hangi değerleri alabilir.
+	System.out.println(" iki kenar uzunluğunu giriniz : ");Scanner sc= new Scanner(System.in);
+	// kenarların girilmesi istenir
+	int a,b,c;a=sc.nextInt();b=sc.nextInt();c=-1;
+	if(a<=0&&b<=0) {System.out.println("kenar uzunlukları negatif veya 0 olamaz");}
+	//kenarlar 0 ve negatif olursa uyarı vermemiz gerekir.
+	else {// kenarlar pozitif olunca işlemler başlar
+		while(!(Math.abs(a-b)<c)) {c++;}
+		// burda önce mutlak |a-b|<c işlemiyle c yi istediğimiz değere getiriyoruz
+	
+while(c<a+b) {System.out.println("3. kenar için olabilecek değerler  : "+ c);
+//önceki döngüde c sayısı istediğimiz değerde sonra her değeri burda yazıp arttırıyoruz.
+c++;	
+}}
