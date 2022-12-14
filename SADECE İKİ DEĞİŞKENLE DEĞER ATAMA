@@ -1,6 +1,7 @@
 // kopyala yapıştırdan kod jızlıca çalışması için . Class tanımlamıyorum . 
 // Kodun tam anlaşılması için kalemle işlem yaparak değerlerin nasıl değiştiğini kontrol etmenizi tavsiye ediyorum.
 // kodun püf notası matematiktir.
+
 	int a=10; int b=20;
 		System.out.println("a : "+ a+"  b : "+b);
 		a=a+b;//a=30 b=20
