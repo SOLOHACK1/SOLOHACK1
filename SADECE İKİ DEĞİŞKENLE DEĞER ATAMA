@@ -3,8 +3,8 @@
 // kodun püf notası matematiktir.
 
 	int a=10; int b=20;
-		System.out.println("a : "+ a+"  b : "+b);
-		a=a+b;//a=30 b=20
-	    b=a-b;//b=10 a=30
-	    a=a-b;//a=20 b=10
+		System.out.println("a : "+ a+"  b : "+b);// kodun anlamak için a ve b yi 10 ve 20 yerine sadece a ve b olarak düşünmeliyiz.
+	    a=a+b;//a=30 b=20 // şimdi bursa a artık a+b olarak düşünmeliyiz. elimizide a+b ve b var 
+	    b=a-b;//b=10 a=30 //a yerine a+b yazıp işlemi b=a+b-b olarak görüp b=a olur.artık b=a ve a=a+b şuan (bilgisayar bu değişkenleri ram da şuan böyle tutuyor)
+	    a=a-b;//a=20 b=10 // a yerine a+b b yerine a yazıp a=a+b-a olur a=b olur ve artık b=a ve a=b oldu
 	    System.out.println("Değişkenler değiştirildi...\n"+"a : "+a+"  b : "+b);
