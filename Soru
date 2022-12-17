@@ -1,0 +1,28 @@
+// kodun kopyala yapıştırdan çalışması için class alınmamıştır
+		// Soru: bir şebeke ağ firması arama miktarına göre fiyatlandırma yapıyor.
+		//100 dk ya kadar 200tl . 100 dk dan sonra ilk 50 dk ya 0,6.sonraki 50 dk için 0.5
+		//200 dk dan sonra dk başına 0.4 krş ücret alınıyor .
+		System.out.print("Arama miktarı giriniz : ");
+		// kod her sınıra geçmeden önce mevcut dklara ücret ekliyor
+		Scanner sc=new Scanner(System.in);int a=sc.nextInt();
+		if(a>100) {// ikinci bir değişkene 100dk.150dk ve 200 dk sonra belirsiz olan dk miktarını atıyoruz.
+			if(a>150) {if(a>200) {int c=a-200;
+				System.out.println("Ödenecek tutar : "+(200+50*0.6+50*0.5+c*0.4)+" TL");
+				}
+				
+			
+			else {int c=a-150;
+			System.out.println("Ödenecek tutar : "+(200+50*0.6+c*0.5)+" TL");}
+			}
+			else {int c=a-100;
+			System.out.println("Ödenecek tutar : "+(200+c*0.6)+" TL"); }
+			
+			
+		}
+		else {System.out.println("Ödenecek tutar : 200 TL");}
+		
+		
+		
+		
+		
+	
