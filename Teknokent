@@ -1,4 +1,4 @@
-
+// kodları kopyala yapıştırdan çalışması için class tanımlanmamıştır. java.util.Scanner tanımlamayı unutmayın.
 	// Soru: Artık yıllar,4'e eşit olarakbölünebilen herhangi bir yıldır. 100'e eşit olarak bölünebilen bir yıl
 	//yalnız 400 de eşitbir yıl giriniz olarak bölünebiliyorsa artık yıldır.
 		System.out.print("Bir yıl giriniz : ");
