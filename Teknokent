@@ -1,0 +1,22 @@
+
+	// Soru: Artık yıllar,4'e eşit olarakbölünebilen herhangi bir yıldır. 100'e eşit olarak bölünebilen bir yıl
+	//yalnız 400 de eşitbir yıl giriniz olarak bölünebiliyorsa artık yıldır.
+		System.out.print("Bir yıl giriniz : ");
+		Scanner sc=new Scanner(System.in);int a=sc.nextInt();
+		if(a%4==0) {// girilen yıl 4 e bölünüyorsa artık yıldır
+			
+			if(a%100==0) {// girilen yıl 100 e bölünüyorsa artık yıl olmak için 400 e de bölünmek zorundadır.
+				
+				if(a%400==0) {// 400 e bölündüğünde artık yıldır
+					
+					System.out.println("Girilen yıl artık yıldır");}
+				else{// 400 e bölünemezse artık yıl değildir
+				
+					System.out.println("Girilen yıl artık yıl değildir.");}
+				}else// girilen yıl 100 e bölünmek zorunda değil bu yüzden 100 e bölünmezsede arık yıldır 
+				{System.out.println("Girilen yıl artık yıldır");}
+			
+		}else {// girilen yıl 4 e bölünemezse artık yıl değildir 
+			System.out.println("Girilen yıl artık yıl değildir");}
+		// System.out.println komutunda out yerine err yazarsanız rengi kırmızı oluyor 
+	
