@@ -1,4 +1,4 @@
-public class calss{
+public class (write your class){
 public static void main(String[] args){
 	// 1'den 20'ye kadar olan sayıların tümüne bölünebilen en küçük pozitif tam sayıyı bulun 
 	int i=1;int k=2;int t=0;
