@@ -1,0 +1,15 @@
+public class (write your class){
+public static void main(String[] args){
+long t= 600851475143l;int i=2; int eab=0;
+while(i<Math.sqrt(t)){
+        if(t%i==0&&i%2!=0&&i%3!=0&&i%5!=0&&i%7!=0&&i%11!=0){
+        eab=i;
+        }
+        i++;
+        }
+        System.out.println("en büyük asal bölen "+eab);
+        }}
+        
+        
+        
+        
