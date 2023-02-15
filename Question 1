@@ -1,0 +1,37 @@
+public class (write your class){
+public static void main(String[] args){
+//1000'nin altıdaki 3 veya 5'e bölünebilen sayıları yazan java kodunu yazınız.
+int i=0;int t=0;int t3,t5,t15;
+while(i<1000){
+if(i%3==0){
+  t=t+i;}
+  i++;}
+  System.out.println("1000'den küçük olup 3'e bölünen sayıların toplamı "+t);
+  t3=t;
+  i=0;t=0;
+  while(i<1000){
+  if(i%5==0){
+        t=t+i;
+        }
+        i++;
+        }
+ System.out.println("1000 den küçük olup 5'e bölğnebilen sayıların toplamı "+t);
+ t5=t;
+ i=0;t=0;
+ while(i<1000){
+ if(i%15==0){
+        t=t+i;
+        }
+        i++;
+        }
+t15=t;
+System.out.println("1000'den küçük olup 15'e bölünebilen sayıların toplamı"+t);
+t=(t3+t5)-t15;
+System.out.println("100 den küçük olup 3 veya 5'e bölünebilen sayıların toplamı"+t);
+}}
+ 
+ 
+ 
+ 
+ 
+ 
