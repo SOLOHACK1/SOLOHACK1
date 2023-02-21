@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class (write your class){
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	
+	double t;double k;
+	do {
+		System.out.println("Önce vize sonra final notu giriniz");
+		t=sc.nextInt();k=sc.nextInt();
+	}while(t<0||t>100||k<0||k>100);
+	double l,m;
+	l=t*0.4;m=k*0.6;
+t=m+l;System.out.println(t);
+	if(t>90)
+	System.out.println("Harf notu : AA");
+	else if(t>80)
+	System.out.println("Harf notu : BA");
+	else	if(t>70)
+		System.out.println("Harf notu: BB");
+	else	if(t>60)
+	System.out.println("Harf notu : CC");
+	else	if(t>55)
+	System.out.println("Harf notu : CD");
+	else if(t>50)
+	System.out.println("Harf notu : DD");
+	else
+		System.out.println("Harf notu : FF");
+}}
+        
+        
+        
+        
