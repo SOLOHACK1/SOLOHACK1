@@ -1,0 +1,31 @@
+
+public class calss{
+public static void main(String[] args) {
+int a,b,c;int t=0;
+
+
+a=1;b=1;c=1;
+
+while(c<700000) {
+
+	c=a+b;
+	a=b;
+	b=c;
+	if(c%2==0)
+	t=t+c;
+}
+	
+System.out.print("\nçift sayıların toplamı "+t);	
+	
+	
+	
+	
+	
+	
+	
+}
+}
+        
+        
+        
+        
