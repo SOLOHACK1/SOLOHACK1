@@ -1,0 +1,24 @@
+
+public class (write your class){
+public static void main(String[] args) {int i=1,t=0;int k=0;
+	while (i<=100)
+	{ k=i*i;
+		t=t+k;
+	i++;
+	}
+	System.out.println("1 den 100 e kadar olan sayıların karesinin toplamı "+t);
+	i=1;int l,m;l=0;
+	while(i<=100)
+	{l=l+i;
+	i++;
+	}
+	m=l*l;
+	System.out.println("1 den 100 e kadar olan sayıların toplamının karesi "+m);
+	System.out.println(" aralarındaki fark ise "+(m-t));
+	
+}
+}
+        
+        
+        
+        
