@@ -1,0 +1,31 @@
+public class (writeyour class){
+	public static void main(String[] args) {
+int i=1;	int t=0;int k=0;	
+while(i<20000) {
+t=2;		while(i%t!=0&&t<i)	
+		
+		{
+			t++;
+			
+			
+		}
+			
+			
+		
+		if(t==i)	
+		{k=k+i;	System.out.println(i);}
+		i=i+2;	
+			
+			
+			
+			
+		}
+		System.out.print(k);
+		
+		
+		
+		
+		
+		
+		
+	}}
